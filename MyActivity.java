@@ -11,7 +11,6 @@ import android.widget.EditText;
 public class MyActivity extends Activity {
 
 	@Override
-
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
@@ -23,16 +22,19 @@ public class MyActivity extends Activity {
 		final Button dec = (Button) findViewById(R.id.button1);
 		final Button rc4 = (Button) findViewById(R.id.button3);
 
-		dec.setOnClickListener(new View.OnClickListener() {
+		dec.setOnClickListener(new View.OnClickListener() 
+	       {
 			@Override
 			public void onClick(View view) {
 
 				Intent i = new Intent(MyActivity.this, Decrypt.class);
 				startActivity(i);
 			}
-		});
+		}
+		);
 
-		rc4.setOnClickListener(new View.OnClickListener() {
+		rc4.setOnClickListener(new View.OnClickListener() 
+	       {
 			@Override
 			public void onClick(View view) {
 				try {
@@ -43,7 +45,8 @@ public class MyActivity extends Activity {
 				} catch (Exception e) {
 				}
 			}
-		});
+		}
+		);
 
 	}
 }
