@@ -28,7 +28,7 @@ public class Decrypt extends Activity {
 					textView.setText(str);
 				} catch (Exception e) {
 					e.printStackTrace();
-					}
+				}
 			}
 		}
 		);
