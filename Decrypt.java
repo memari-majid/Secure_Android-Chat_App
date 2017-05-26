@@ -19,7 +19,8 @@ public class Decrypt extends Activity {
 		final Button bRc4 = (Button) findViewById(R.id.brc);
 		final RC4 rc = new RC4(new byte[] { 1, 2, 3 });
 
-		bRc4.setOnClickListener(new View.OnClickListener() {
+		bRc4.setOnClickListener(new View.OnClickListener() 
+		{
 			@Override
 			public void onClick(View view) {
 				try {
@@ -27,9 +28,10 @@ public class Decrypt extends Activity {
 					textView.setText(str);
 				} catch (Exception e) {
 					e.printStackTrace();
-				}
+					}
 			}
-		});
+		}
+		);
 
 	}
 }
